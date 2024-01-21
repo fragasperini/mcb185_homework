@@ -1,0 +1,14 @@
+Sab 20 Gen 2024 19:17:04 PST
+user: francescacorinnagasperini
+home: /Users/francescacorinnagasperini
+shell: /bin/bash
+pwd: /Users/francescacorinnagasperini/Code/mcb185_homework
+path: /usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin
+Darwin Fras-MacBook.local 23.1.0 Darwin Kernel Version 23.1.0: Mon Oct  9 21:28:12 PDT 2023; root:xnu-10002.41.9~6/RELEASE_ARM64_T8103 arm64
+Python 3.9.6
+/Users/francescacorinnagasperini/Code
+/Users/francescacorinnagasperini/Code/mcb185_homework
+/Users/francescacorinnagasperini/Code/mcb185_homework/.git
+/Users/francescacorinnagasperini/Code/MCB185
+/Users/francescacorinnagasperini/Code/MCB185/.git
+/Users/francescacorinnagasperini/Code/MCB185/data
