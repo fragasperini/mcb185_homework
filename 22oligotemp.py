@@ -15,4 +15,4 @@ tm = oligotemp(5, 1, 3, 2)  # (A + C + G + T) < 13
 print(tm)                   # 30
 
 tm = oligotemp(8, 4, 7, 6)  # (A + C + G + T) > 13
-print(tm)                   # 56.04400000000001s
+print(tm)                   # 56.04400000000001
