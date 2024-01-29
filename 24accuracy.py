@@ -14,17 +14,12 @@ def accuracy(fn, fp, tn, tp):
 	
 	return ac, f1
 	
-ac, f1 = accuracy(5, 2, 10, 15)
-print(ac, f1)
+print(accuracy(5, 2, 10, 15))
 
-ac, f1 = accuracy(5, 9, 78, 55)
-print(ac, f1)
+print(accuracy(5, 9, 78, 55))
 
-ac, f1 = accuracy(35, 0, 53, 70)
-print(ac, f1)
+print(accuracy(35, 0, 53, 70))
 
-ac, f1 = accuracy(0, 0, 24, 31)
-print(ac, f1)
+print(accuracy(0, 0, 24, 31))
 
-ac, f1 = accuracy(-3, 8, 64, 30)
-print(ac, f1)
+print(accuracy(-3, 8, 64, 30))
