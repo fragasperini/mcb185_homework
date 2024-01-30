@@ -40,4 +40,4 @@ print(result)
 
 aa ='h'
 result = hydropathy(aa)
-print(result)
+print (result)
