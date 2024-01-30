@@ -14,7 +14,7 @@ def quadratic(a, b, c):
 	return x1, x2
 	
 x1, x2 = quadratic(3, 5, 2)
-print(x1, x2)                # x1 = -0.66666666666666 and x2 = -1
+print (x1, x2)                # x1 = -0.66666666666666 and x2 = -1
 
 x1, x2 = quadratic(1, -2, 1)
 print(x1, x2)                # x1 = x2 = 1
