@@ -2,7 +2,7 @@
 
 import math
 
-print ('hello, again') # greetings
+print('hello, again') # greetings
 
 """
 This is a 
@@ -21,7 +21,7 @@ print(5 % 2)	#modulo, provides remainder after integer division
 
 # Math functions
 
-print(abs(-3)) 	# absolute value of (-3)
+print(abs(-3)) 	# absolute value of -3
 print(pow(3, 2)) 	# 3 to the power of 2
 print(round(3.658318, ndigits=3))	# round off x to 3 digits
 print(math.log10(101))
@@ -94,7 +94,7 @@ if a == b:
 
 if a == b: 
 	print('a equals b')
-print(a,b)
+print(a, b)
 
 
 # Boolean 
@@ -148,13 +148,14 @@ s1 = 'A'
 s2 = 'B'
 s3 = 'a'
 if s1 < s2: print('A < B')
-if s2 < s3: print ('B < a')
+if s2 < s3: print('B < a')
 
 # Mismatched type error
 
 a = 1
 s = greeting
-if a < s: #print('a < s') # '<' not supported between instances of 'int' and 'function'
+if a < s: #print('a < s') 
+	# '<' not supported between instances of 'int' and 'function'
 
 # More practice
 
