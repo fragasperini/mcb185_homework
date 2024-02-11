@@ -24,3 +24,54 @@ for i in range(3):
 # Gaussian distribution
 for i in range(5): 
 	print(random.gauss(0.0, 1.0)) # argument: (mean,stdv)
+
+print('this line\n has some\n line breaks')
+
+print('a\tb\tcat\tdogma')
+
+print(10, 20, 30, 40, sep='\t')
+print(100, 2000, 30000, 4000, sep='\t')
+
+# f-strings
+i = 1
+pi = 3.14159
+print('normal string {i} {pi}')
+print(f'formatted string {i} {pi}')
+print(f'tau {pi + pi}')
+
+print(f'formatted string {i} {pi:.3f}')
+
+# sys.stderr
+import sys
+print('logging', file=sys.stderr)
+
+# Monte Carlo algorithms
+# Pseudorandom 
+random.seed(1)
+print(random.random())
+print(random.random())
+random.seed(2)
+print(random.random())
+print(random.random())
+random.seed(1)
+print(random.random())
+print(random.random())
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
