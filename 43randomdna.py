@@ -9,5 +9,3 @@ for i in range(1, 6):
 	for j in range(random.randint(55, 70)):
 		print(random.choice(nts), end='')
 	print()
-
-	
