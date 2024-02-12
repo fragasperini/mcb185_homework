@@ -3,7 +3,8 @@ Report of programs 45, 46, 47
 
 ## 45dnastats ##
 
-The program calculates the average value based on various different roules.
+The program calculates the average value based on various different 
+rules.
 The rules taken into account are the following ones:
 
 + [3D6](#3D6)
@@ -12,7 +13,7 @@ The rules taken into account are the following ones:
 + [4D6d1](#4D6d1)
 
 
-### 3R6 ###
+### 3D6 ###
 
 This program rolls 3 six-sided dice and then calculates the average
 of the throws. 
@@ -133,5 +134,22 @@ structured the loops but I have been unable to fix it._
 
 ## 47deathsaves ##
 
+In death saves if the throw of a d20 results in a number lower than
+10 the result is one "failure". If the number equals to 10 or greater 
+you score a "success". 3 failures result in "death", while 3 successes
+result in "stabilization". When rolling a 1, it counts as 2 failures,
+while rolling a 20 results in being revived. The program simulates 
+death saves and the probability of the throws resulting in death,
+stabilizing or being revived. 
 
- 
+|  Condition |     Rolls    | Probability |
+|:----------:|:------------:|:-----------:|
+|    Death   | failure >= 3 |    0.16099  |
+| Stabilized | success >= 3 |    0.16567  |
+|   Revived  |    roll 20   |    0.26733  |
+
+
+_Note: the program runs smoothly but the probability output is wrong,
+given that the condition which is more rare (being revived) has the 
+highest probability to take place. It is probably due to an error in
+the hypotheticals._
