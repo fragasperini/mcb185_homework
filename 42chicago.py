@@ -4,7 +4,7 @@ import random
 import sys
 
 games = 10
-for i in range (games):
+for i in range(games):
 	print(f'game #{i}')
 	for target in range(2, 13):
 		d1 = random.randint(1, 6)
@@ -45,8 +45,8 @@ import random
 for i in range(30):
 	score = 0
 	for number in range(2, 13):
-		d1 = random.randint(1,6)
-		d2 = random.randint(1,6)
+		d1 = random.randint(1, 6)
+		d2 = random.randint(1, 6)
 		if d1 + d2 == number:
 			score += number
 	print(score)
@@ -61,8 +61,8 @@ gamesplayed = 100000
 for i in range(30):
 	score = 0
 	for number in range(2, 13):
-		d1 = random.randint(1,6)
-		d2 = random.randint(1,6)
+		d1 = random.randint(1, 6)
+		d2 = random.randint(1, 6)
 		if d1 + d2 == number:
 			score += number
 	if score == 0: 
@@ -79,8 +79,8 @@ gamesplayed = 100000
 for i in range(30):
 	score = 0
 	for number in range(2, 13):
-		d1 = random.randint(1,6)
-		d2 = random.randint(1,6)
+		d1 = random.randint(1, 6)
+		d2 = random.randint(1, 6)
 		if d1 + d2 == number:
 			score += number
 	totalscore += score
