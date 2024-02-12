@@ -19,11 +19,11 @@ print()
 
 # random number between two end points
 for i in range(3):
-	print(random.randint(1,6))
+	print(random.randint(1, 6))
 
 # Gaussian distribution
 for i in range(5): 
-	print(random.gauss(0.0, 1.0)) # argument: (mean,stdv)
+	print(random.gauss(0.0, 1.0)) # argument: (mean, stdv)
 
 print('this line\n has some\n line breaks')
 
