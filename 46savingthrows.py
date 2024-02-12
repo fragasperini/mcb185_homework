@@ -10,6 +10,9 @@ def roll_normal():
 trials = 1000
 print('dc', 'norm', 'adv', 'dis', sep='\t')
 for dc in range(5, 16, 5):
+	n = 0
+	a = 0
+	d = 0
 	print(dc, end= '\t')
 	success = 0 
 	for i in range(trials):
@@ -37,7 +40,6 @@ def roll_disadvantage():
 	roll2 = roll_normal()
 	if roll1 < roll2: return roll1
 	else:             return roll2
-	
 	for i in range(trials):
 		rn = roll_disadvantage()
 		if rn > dc: success += 1
