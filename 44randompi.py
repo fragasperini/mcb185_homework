@@ -3,18 +3,16 @@
 import random
 import math
 
-r = 0
-b = 0
+in_circumference = 0
+out_circumference = 0
 
 while True: 
 	x = random.random()
 	y = random.random()
 	d = math.sqrt(x**2 + y**2)
+		
+	if d < 1: in_circumference += 1
+	else:     out_circumference += 1
 	
-	if d < 1: r += 1
-	else:     b += 1
-	
-	pi = 4 * r / (r + b)
+	pi = 4 *  in_circumference / (in_circumference + out_circumference)
 	print(pi)
-
-	
