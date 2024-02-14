@@ -121,16 +121,12 @@ keeping the lower number. This program simulates saving throws
 against DCs 5, 10 and 15 and calculates the probability of success 
 in normal conditions, with advantage or disadvantage.
 
-| DC | Normal | Adv. | Disadv. |
-|:--:|:------:|:----:|:-------:|
-|  5 |  0.751 |      |         |
-| 10 |  0.497 |      |         |
-| 15 |  0.263 |      |         |
+| DC | Normal |  Adv.  | Disadv. |
+|:--:|:------:|:------:|:-------:|
+|  5 |  0.819 |  0.959 |  0.622  |
+| 10 |  0.539 |  0.795 |  0.322  |
+| 15 |  0.295 |  0.527 |  0.090  |
 
-_Note: in the terminal there is no output for conditions of advantage 
-or disadvantage, which is also why those two columns, in the table 
-above, are empty. I think that it is due to a mistake in the way I 
-structured the loops but I have been unable to fix it._
 
 ## 47deathsaves ##
 
@@ -144,12 +140,7 @@ stabilizing or being revived.
 
 |  Condition |     Rolls    | Probability |
 |:----------:|:------------:|:-----------:|
-|    Death   | failure >= 3 |    0.16099  |
-| Stabilized | success >= 3 |    0.16567  |
-|   Revived  |    roll 20   |    0.26733  |
+|    Death   | failure >= 3 |    0.40574  |
+| Stabilized | success >= 3 |    0.40936  |
+|   Revived  |    roll 20   |    0.1849   |
 
-
-_Note: the program runs smoothly but the probability output is wrong,
-given that the condition which is more rare (being revived) has the 
-highest probability to take place. It is probably due to an error in
-the hypotheticals._
