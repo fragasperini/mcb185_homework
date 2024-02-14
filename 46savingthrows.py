@@ -23,7 +23,7 @@ for dc in range(5, 16, 5):
 	a = 0
 	d = 0
 	for i in range(trials):
-		if roll_normal() >= dc: n += 1		 # Normal
-		if roll_advantage() >= dc: a += 1	 # Advantage
+		if roll_normal() >= dc: n += 1       # Normal
+		if roll_advantage() >= dc: a += 1    # Advantage
 		if roll_disadvantage() >= dc: d += 1 # Disadvantage
 	print(f'{dc}\t{n/trials:.3f}\t{a/trials:.3f}\t{d/trials:.3f}')
