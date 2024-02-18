@@ -69,7 +69,7 @@ names = ('adenine', 'cytosine', 'guanine', 'thymine')
 for i in range(len(nts)):          # or len(names) ?
 	print(nts[i], names[i])
 
-for nt, name in zip(nts, names):   # much better, error with different lenght of containers,not problem
+for nt, name in zip(nts, names):   #error with different lenght of containers 
 	print(nt, name)
 
 for i, (nt, name) in enumerate(zip(nts, names)):
@@ -200,7 +200,7 @@ print(dkl(p1, p2))
 
 # Files
 
-with open(path) as fp:            # file pointer (fp)
+with open(path) as fp:            # file pointer(fp)
 	for line in fp:
 		do_something_with(line)
 
