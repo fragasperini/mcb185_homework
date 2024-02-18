@@ -84,3 +84,139 @@ print(nts)
 
 nts.append('C')
 print(nts)
+
+last = nts.pop()
+print(last)
+
+nts.sort()
+print(nts)
+nts.sort(reverse = True)
+print(nts)
+
+nucleotides = nts
+nucleotides.append('C')
+nucleotides.sort()
+print(nts, nucleotides)
+
+#list.copy()   #it is a shallow copy, doesn't copy all the data
+
+items = list()
+print(items)
+items.append('eggs')
+print(items)
+
+stuff = []
+stuff.append(3)
+print(stuff)
+
+alph = 'ABCDEFGHIJKLMNOPQRSTUV'
+print(alph)
+aas = list(alph)
+print(aas)
+
+text = 'good day to you'
+words = text.split()
+print(words)
+
+line = '1.41, 2.72, 3.14'
+print(line.split(','))
+print(line.split('\t'))
+
+s = '-'.join(aas)
+print(s)
+s = ''.join(aas)
+print(s)
+
+# Searching items
+
+if 'A' in alph: print('yay')
+if 'a' in alph: print('no')
+
+## Index
+
+print('index G?', alph.index('G'))
+# print('index Z?', alph.index('Z'))
+
+## Find
+
+print('find G?', alph.find('G'))
+print('find Z?', alph.find('Z'))     # returns -1 when element can't be found
+# this only works in strings, so when using it in lists or tuples, first use if
+
+#if thing in list: idx = list.index(thing)
+
+# Return minimum value
+def minimum(vals):
+	mini = vals[0]
+	for val in vals[1:]:
+		if val < mini: mini = val
+	return mini
+
+vals = [1, 6, 32, 86, 48, 2.5, 0.5, 100]
+result = minimum(vals)
+print(result)
+
+# Return both min and max value
+def minmax(vals): 
+	mini = vals[0]
+	maxi = vals[0]
+	for val in vals:
+		if val < mini: mini = val
+		if val > maxi: maxi = val
+	return mini, maxi
+result = minmax(vals)
+print(result)
+
+# Mean value
+
+def mean(vals):
+	total = 0
+	for val in vals: total += val
+	return total/len(vals)
+
+result  = mean(vals)
+print(result)
+
+# Entropy in probability distribution
+import math 
+
+def entropy(probs):
+	h = 0
+	for p in probs:
+		h -= p * math.log2(p)
+	return h
+#print(entropy([0.2, 0.3, 0.5, 0]))  #fix?
+
+# Computation of Kullback-Leibler distance between two prob. distributions
+
+def dkl(P, Q):
+	d = 0
+	for p, q in zip(P, Q):
+		d += p * math.log2(p/q)     #improvements
+	return d
+p1 = [0.4, 0.3, 0.2, 0.1]
+p2 = (0.1, 0.3, 0.4, 0.1)
+print(dkl(p1, p2))
+
+# Files
+
+with open(path) as fp:            # file pointer (fp)
+	for line in fp:
+		do_something_with(line)
+
+# Compressed files
+
+import gzip
+with gzip.open(path, 'rt') as fp:
+	for line in fp:
+		print(line, end='')
+
+# Converting strings to numbers
+
+i = int('42')
+x = float('0.61803')
+
+		
+
+
+
