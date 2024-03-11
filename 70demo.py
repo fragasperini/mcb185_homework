@@ -75,4 +75,7 @@ for k, v in sorted(count.items(), key=by_value):
 	print(k, v)
 
 #K-mers
-
+#finding missing k-mer: 
+import itertools
+for nts in itertools.product('ACGT', repeat=2):
+	print(nts)
