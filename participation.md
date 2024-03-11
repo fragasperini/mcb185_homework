@@ -16,15 +16,15 @@ Participation
 
 | U | AC | VP | AQ | OC | SH | SA | CA | OA | Tot | Notes
 |:-:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:---:|:--------
-| 5 |  4 |    |    |  2 |    |  1 |    |    |  7  |  2, 3
-| 6 |
-| 7 | 
-| 8 | 
+| 5 |  4 |    |    |  2 |    |  1 |    |  3 |  10 |  2, 3, 4
+| 6 |    |    |    |  2 |    |  1 |    |    |  3  |
+| 7 |  2 |    |    |  2 |    |  1 |    |  1 |  6  |  4
+| 8 |  2 |    |  1 |  2 |    |  1 |    |    |  6  |
 | 9 |
 
 Notes:
 
 1. I helped another student fix their github account
 2. I stayed after class and got help from the professor
-3. Additionally, I took part in an unscheduled coderie 
-with Dr. Korf on Saturday and to Lilith's office hours
+3. I took part in an unscheduled coderie over the weekend with Dr. Korf
+4. Went to Lilith's office hours
