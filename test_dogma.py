@@ -5,7 +5,7 @@ import dogma
 print(dogma.transcribe('ACGT'))
 print(dogma.revcomp('AAAAACGT'))
 print(dogma.translate('ATGTAA')) # should return M* (where * is stop codon)
-
+print(dogma.translate('ATGTAACCGCCA'))
 s = 'ACGTGGGGGCATATG'
 print(dogma.gc_comp(s))
 print(dogma.gc_skew(s), dogma.gc_skew(dogma.revcomp(s)))
