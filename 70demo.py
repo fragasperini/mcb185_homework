@@ -64,8 +64,8 @@ for k, v in sorted(count.items(), key=lambda item: item[1]):
 	print(k, v)
 
 '''
-the lambda function reads the tuple item returning the second element of it. This way 
-it sorts by value.
+the lambda function reads the tuple item returning the second element of it.
+This way it sorts by value.
 '''
 
 def by_value(tuple):
