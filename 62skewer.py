@@ -24,7 +24,7 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]): # setting initial position
 		
 		# calculate the output without calling functions
 		gc_comp = (g + c) / wlen
-		gc_skew = (g - c) / (g + c) if (g + c) != 0 else 0
+		gc_skew = (g - c) / (g + c) if(g + c) != 0 else 0
 
 		print(f'{i}\t {gc_comp}\t{gc_skew}')
 
@@ -32,11 +32,12 @@ for defline, seq in mcb185.read_fasta(sys.argv[1]): # setting initial position
 #61skewer.py
 for defline, seq in mcb185.read_fasta(sys.argv[1]):
 
-	for i in range(0, len(seq) -wlen +1, 1):   # not adding one bc we are looking 1 ahead
+	for i in range(0, len(seq) -wlen +1, 1):   
+	# not adding one bc we are looking 1 ahead
 		s = seq[i:i+wlen]
 		print(f'{i}\t {dogma.gc_comp(s):.3f}\t{dogma.gc_skew(s):.3f}')
-
-# ideal solution to dust as well (?)
+		
+# ideal solution to dust as well(?)
 '''
 
 '''
