@@ -96,7 +96,7 @@ def translate(dna):
 	aas = []
 	for i in range(0, len(dna), 3):
 		codon = dna[i:i+3]
-		if codon in codons:    # need to ask if codon is present otherwise creates errors
+		if codon in codons:    #ask if codon is present otherwise creates errors
 			idx = codons.index(codon)
 			aa = aminos[idx]
 			aas.append(aa)
@@ -112,7 +112,7 @@ aas.append(aminos[codons.index(codon)])
 # GC count
 
 def gc_comp(seq):
-	return (seq.count('C') + seq.count('G')) / len(seq)
+	return(seq.count('C') + seq.count('G')) / len(seq)
 
 # GC skew
 
@@ -120,7 +120,7 @@ def gc_skew(seq):
 	c = seq.count('C')
 	g = seq.count('G')
 	if c + g == 0: return 0
-	return (g - c) / (g + c)
+	return(g - c) / (g + c)
 
 # Entropy
 def entropy(a, c, g, t):
