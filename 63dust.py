@@ -26,11 +26,19 @@ for i in range(0, len(masked_seq), 60): #this wrapps the loop
 	print(masked_seq[i:i+60] )
 	
 #outputs should look like fasta files, with entries and everything
-#Output is pure chaos (????)
 '''
 low complexity is a threshold (usually needed a bunch of ATs). 
 Need to do a substitution of the actual sequence with N. The more N the more
 alignments will not work.
 
 for strings just create an empty one and then add stuff to it 
+'''
+'''
+aviod making as many Ns as possible(?)
+convert the string? take dna making it to something else
+doing a list 
+put sequence into list
+seq.split()
+area of low  complexity vjangfe it 
+no need to nest a loop
 '''
